@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+  font-family: Arial, sans-serif;
+}
+.box1,.box2,.box3,.box4,.box5{
+  height: 300px;
+  width: 300px;
+  margin-bottom: 14px;
+}
+.box1{
+  background-color: red;
+}
+.box2{
+  background-color: rgb(45, 193, 42);
+}
+.box3{
+  background-color: rgb(111, 26, 104);
+}
+.box4{
+  background-color: rgb(244, 18, 172);
+}
+.box5{
+  background-color: rgb(89, 19, 187);
+}

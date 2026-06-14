@@ -10,5 +10,5 @@ gsap.to('.box',{
   delay:0.6,
   duration: 1.5,
   repeat:-1,
-  
+
 })
