@@ -1,0 +1,43 @@
+import gsap from 'gsap'
+import './style.css'
+
+
+const play = document.querySelector('.play')
+const pause = document.querySelector('.pause')
+const restart = document.querySelector('.restart')
+const reverse = document.querySelector('.reverse')
+const tl= gsap.timeline({paused :true})
+tl.to(".box1",{
+  x:1200,
+  duration:1.3,
+  ease:"power4.out",
+  delay:0.5,
+}).to(".box2",{
+  x:1200,
+  duration:1.3,
+  ease:"power4.out",
+  delay:0.5,
+}).to(".box3",{
+  x:1200,
+  duration:1.3,
+  ease:"power4.out",
+  delay:0.5,
+}).to(".box4",{
+  x:1200,
+  duration:1.3,
+  ease:"power4.out",
+  delay:0.5,
+})
+
+play.addEventListener('click',()=>{
+    tl.play()
+})
+pause.addEventListener('click',()=>{
+    tl.pause()
+})
+restart.addEventListener('click',()=>{
+    tl.restart()
+})
+reverse.addEventListener('click',()=>{
+    tl.reverse()
+})
