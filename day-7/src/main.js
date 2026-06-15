@@ -6,6 +6,7 @@ const play = document.querySelector('.play')
 const pause = document.querySelector('.pause')
 const restart = document.querySelector('.restart')
 const reverse = document.querySelector('.reverse')
+const seek = document.querySelector('.seek')
 const tl= gsap.timeline({paused :true})
 tl.to(".box1",{
   x:1200,
@@ -17,7 +18,7 @@ tl.to(".box1",{
   duration:1.3,
   ease:"power4.out",
   delay:0.5,
-}).to(".box3",{
+}).addLabel("anshi").to(".box3",{
   x:1200,
   duration:1.3,
   ease:"power4.out",
@@ -40,4 +41,7 @@ restart.addEventListener('click',()=>{
 })
 reverse.addEventListener('click',()=>{
     tl.reverse()
+})
+seek.addEventListener('click',()=>{
+    tl.seek("anshi")
 })
